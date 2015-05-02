@@ -3,7 +3,7 @@ var connect = require('gulp-connect');
 
 gulp.task('connect', 'Connect LiveReload', function() {
   connect.server({
-    root: 'leadpages-template',
+    root: 'avalon-school',
     livereload: true
   });
 });
