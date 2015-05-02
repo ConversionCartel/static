@@ -6,6 +6,6 @@ gulp.task('open', 'Launch the default browser', function(){
 		url: 'http://localhost:8080',
 		app: 'google chrome'
 	};
-	gulp.src('./leadpages-template/index.html')
+	gulp.src('./avalon-school/index.html')
 	.pipe(open('', opts));
 });

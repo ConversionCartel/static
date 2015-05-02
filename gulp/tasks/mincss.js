@@ -8,8 +8,8 @@ var handleErrors = require('../util/handleErrors');
  * NOTE: Excluding vendor.css from minifying. Weird stuff could happen
  */
 var paths = {
-	cssFiles: ['./leadpages-template/css/*.css', '!./leadpages-template/css/vendor.css'],
-	dest: './build/dist/leadpages-template/css'
+	cssFiles: ['./avalon-school/css/*.css', '!./avalon-school/css/vendor.css'],
+	dest: './build/dist/avalon-school/css'
 };
 
 gulp.task('mincss', 'Minify CSS', function(){

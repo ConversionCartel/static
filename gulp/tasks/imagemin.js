@@ -4,7 +4,7 @@ var imagemin = require('gulp-imagemin');
 var handleErrors = require('../util/handleErrors');
 
 var imgSrc = './images/**/*';
-var imgDest = './leadpages-template/img';
+var imgDest = './avalon-school/img';
 
 // Minify any new images
 gulp.task('images', 'Optimize images', function() {

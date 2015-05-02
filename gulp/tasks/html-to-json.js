@@ -7,9 +7,9 @@ var readJSONSync = require('read-json-sync');
 var writeJson = require('write-json');
 
 var paths = {
-    htmlFiles : ['./leadpages-template/*.html'],
-    jsonFile : './leadpages-template/meta/template.json',
-    dest : './leadpages-template/meta'
+    htmlFiles : ['./avalon-school/*.html'],
+    jsonFile : './avalon-school/meta/template.json',
+    dest : './avalon-school/meta'
 };
 
 var checkDuplicatesID = function(elements) {
