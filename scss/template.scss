@@ -7,8 +7,12 @@
  */
 @import "_settings.colors";
 @import "_settings.global";
+
+/** MIXINS */
 @import "mixins/_mq";
 
-@import "_headings.global";
+
+/** Partials */
+@import "base";
 
 @import "header/header";
