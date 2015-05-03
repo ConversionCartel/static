@@ -58,10 +58,16 @@
 }
 
 .header-utils{
+	width: 100%;
+	max-width: 200px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	text-align: right;
 
 	@include bp(desktop){
-		width: 100%;
-		text-align: right;
+		position: static;
+		max-width: 100%;
 	}
 
 	.list-inline-item {
@@ -92,13 +98,49 @@
 	display: inline-block;
 }
 
+.header-input-list-item {
+	position: relative;
+}
+
+.header-search-label{
+	color: $dark;
+	position: absolute;
+	right: 5px;
+	top: 1px;
+}
+
+.header-input-search {
+	width: 200px;
+
+	&:after{
+		content: '\f002';
+		display: block;
+		position: absolute;
+		right: 0;
+	}
+}
+
+
 .logo{
-	margin: 20px 0;
+	display: inline-block;
+	margin: 10px 0;
 	padding: 0;
 
+	max-width: 175px;
+
 	@include bp(desktop) {
-		display: inline-block;
+		max-width: 200px;
+		display: block;
+		float: left;
 	}
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	@include transition();
 
 }
 
@@ -110,6 +152,7 @@
 	width: 100%;
 	max-width: 200px;
 	position: absolute;
+	top: 20px;
 	right: 0;
 
 	padding: 10px 0;
@@ -117,41 +160,66 @@
 
 	@include bp(desktop) {
 		position: static;
-		display: inline-block;
+		display: block;
 		background: none;
 	  	vertical-align: top;
-	  	text-align: right;
-	  	max-width: 81%;
+	  	float: right;
+	  	max-width: 728px;
 	}
 
 	.list-inline-item {
 		text-align: right;
-		padding: 10px 20px;
+		padding: 0;
 
-		&:hover{
-			background-color: rgba(0, 174, 239, 0.49);
+		&:first-child{
+			padding-left: 0;
 		}
 
-		@include bp(tablet){
+		&:last-child {
+			padding-right: 0;
+		}
+
+		a{
+			display: block;
+			padding: 10px 20px;
+
+			@include bp(desktop){
+				padding: 0;
+			}
+
+			&:hover{
+				background-color: rgba(252, 176, 64, 0.49);
+				color: $tertiary;
+
+				@include bp(desktop){
+					background: none;
+				}
+			}
+
+			&:after{
+				display: none;
+
+				@include bp(desktop) {
+					background: none;
+				}
+			}
+
+			@include transition();
+
+		}
+
+		@include bp(desktop){
 			text-align: left;
 
-			max-width:130px;
+			max-width:120px;
 			vertical-align: middle;
-			padding: 0 15px;
-
-			&:last-child {
-				padding-right: 0;
-			}
+			padding: 0 10px;
 
 		}
 	}
 }
-
-.header-input-search {
-	width: 200px;
-}
-
 .header-content {
+	clear: both;
 	padding: 60px 0 40px;
 	width: 100%;
 	vertical-align: middle;
