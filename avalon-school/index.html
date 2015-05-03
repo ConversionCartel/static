@@ -24,8 +24,9 @@
           <li class="list-inline-item header-social-list-item">
             <a href="#" class="header-social-padded twitter"><i class="fa fa-facebook"></i></a>
           </li>
-          <li class="list-inline-item header-social-list-item">
+          <li class="list-inline-item header-input-list-item">
             <form action="">
+              <label for="search" class="header-search-label search-icon"><i class="fa fa-search"></i></label>
               <input type="text" name="search" role="search" class="input header-input-search" placeholder="Search">
             </form>
           </li>
@@ -39,7 +40,12 @@
       </h1>
 
       <nav role="menu" class="menu">
-        <ul class="list-inline">
+        <div class="mobile-only menu-bar">
+          <a href="#" class="js--menu">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <ul class="list-inline ui--menu">
           <li class="list-inline-item">
             <a href="/about/">About Us</a>
           </li>

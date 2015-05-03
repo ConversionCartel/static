@@ -24,8 +24,9 @@
           <li class="list-inline-item header-social-list-item">
             <a href="#" class="header-social-padded twitter"><i class="fa fa-facebook"></i></a>
           </li>
-          <li class="list-inline-item header-social-list-item">
+          <li class="list-inline-item header-input-list-item">
             <form action="">
+              <label for="search" class="header-search-label search-icon"><i class="fa fa-search"></i></label>
               <input type="text" name="search" role="search" class="input header-input-search" placeholder="Search">
             </form>
           </li>
@@ -39,7 +40,12 @@
       </h1>
 
       <nav role="menu" class="menu">
-        <ul class="list-inline">
+        <div class="mobile-only menu-bar">
+          <a href="#" class="js--menu">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <ul class="list-inline ui--menu">
           <li class="list-inline-item">
             <a href="/about/">About Us</a>
           </li>
@@ -80,7 +86,14 @@
     <div class="prospect-container">
       
       <div class="sidebar-menu">
-        hi there
+        <h3 class="sidebar-headline">For Prospectus Students</h3>
+        <ul>
+          <li><a href="#">Faq</a></li>
+          <li><a href="#">take a Tour</a></li>
+          <li><a href="#">Enroll Now</a></li>
+          <li><a href="#">Awards &amp; Recognition</a></li>
+          <li><a href="#">Inside Avalon</a></li>
+        </ul>
       </div>
 
       <div class="content-container">
@@ -94,7 +107,8 @@
   <footer class="footer" role="footer">
 
     <div class="footer-container">
-      <div class="col-av-4">
+      <ul class="col-av-4">
+      <li>
         <img src="img/avalon-school-logo.png" class="footer-logo" alt="Avalon School">
         <p class="address">
           711 Glendale St.<br>
@@ -107,9 +121,11 @@
           <br>
           Email: info@avalonschool.org
         </p>
-      </div>
+        </li>
+      </ul>
 
-      <div class="col-av-4">
+      <ul class="col-av-4">
+      <li>
         <h5 class="footer-headline">About Us</h5>
         <ul class="hi">
           <li><a href="#">Our Team</a></li>
@@ -122,9 +138,11 @@
           <li><a href="#">Community Involvement</a></li>
           <li><a href="#">Further Reading</a></li>
         </ul>
-      </div>
+        </li>
+      </ul>
 
-      <div class="col-av-4">
+      <ul class="col-av-4">
+      <li>
         <h5 class="footer-headline">For Prospective Students</h5>
         <ul>
           <li><a href="#">What is Project Based Learning?</a></li>
@@ -135,9 +153,11 @@
           <li><a href="#">What is Project Based Learning?</a></li>
           <li><a href="#">Student Work</a></li>
         </ul>
-      </div>
+        </li>
+      </ul>
 
-      <div class="col-av-4">
+      <ul class="col-av-4">
+      <li>
         <h5 class="footer-headline">For Educators</h5>
         <ul>
           <li><a href="#">What is Project Based Learning?</a></li>
@@ -159,7 +179,8 @@
             </li>
           </ul>
         </div>
-      </div>
+        </li>
+      </ul>
     </div>
 
     <div class="footer-copyright">

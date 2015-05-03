@@ -20,7 +20,8 @@
 		color: $tertiary;
 		text-decoration: none;
 		position: relative;
-		font-family: 'Montserrat Regular', sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
 
 		&:after{
 			content: '';
@@ -58,10 +59,16 @@
 }
 
 .header-utils{
+	width: 100%;
+	max-width: 200px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	text-align: right;
 
 	@include bp(desktop){
-		width: 100%;
-		text-align: right;
+		position: static;
+		max-width: 100%;
 	}
 
 	.list-inline-item {
@@ -77,7 +84,11 @@
 }
 
 .header-social-list-item {
-	//display: none;
+	display: none;
+
+	@include bp(desktop) {
+		display: inline-block;
+	}
 
 }
 
@@ -88,55 +99,196 @@
 	display: inline-block;
 }
 
+.header-input-list-item {
+	position: relative;
+}
+
+.header-search-label{
+	color: $dark;
+	position: absolute;
+	right: 5px;
+	top: 1px;
+}
+
+.header-input-search {
+	width: 200px;
+
+	&:after{
+		content: '\f002';
+		display: block;
+		position: absolute;
+		right: 0;
+	}
+}
+
+
 .logo{
-	margin: 20px 0;
+	display: inline-block;
+	margin: 10px 0;
 	padding: 0;
 
+	max-width: 160px;
+
 	@include bp(desktop) {
-		display: inline-block;
+		max-width: 160px;
+		display: block;
+		float: left;
 	}
 
+	@include bp(wider-desktop) {
+		max-width: 200px;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	@include transition();
+
+}
+
+.menu-bar {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	right: 20px;
+	text-align: right;
+	width: 100%;
+	padding-right: 20px;
+
+	.fa{
+		font-size: 45px;
+	}
+
+	&:hover{
+		&:after{
+			display: none;
+		}
+	}
+
+	@include bp(desktop) {
+		display: none;
+	}
 }
 
 .menu {
 	margin: 20px 0;
 
+	display: block;
+	width: 100%;
+	max-width: 200px;
+
 	@include bp(desktop) {
-		display: inline-block;
 	  	vertical-align: top;
-	  	text-align: right;
-	  	max-width: 81%;
-	  	width: 100%;
+	  	float: right;
+	  	max-width: 760px;
+	}
+
+	@include bp(wider-desktop) {
+		max-width: 785px;
+	}
+
+	.list-inline {
+		background-color: rgba(1, 1, 1, 0.9);
+		padding: 10px 0;
+		position: absolute;
+		top: 110px;
+		right: -220px;
+
+		@include translate(0px);
+
+		@include bp(desktop) {
+			position: static;
+			background: none;
+		}
+
+		&.is-active{
+			@include translate(-220px);
+
+			@include bp(desktop) {
+				-moz-transform: translateX(0px);
+				-o-transform: translateX(0px);
+				-webkit-transform: translateX(0px);
+				transform: translateX(0px);
+			}
+
+		}
+
+		@include transition(all, 1.5s, ease-in-out);
+
+
 	}
 
 	.list-inline-item {
 		text-align: right;
+		padding: 0;
+
+		&:first-child{
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		a{
+			display: block;
+			padding: 10px 20px;
+			font-size: 14px;
+
+			@include bp(desktop){
+				padding: 0;
+				font-size: 13px;
+			}
+
+			@include bp(wider-desktop) {
+				font-size: 14px;
+			}
+
+			&:hover{
+				background-color: rgba(252, 176, 64, 0.49);
+				color: $tertiary;
+
+				@include bp(desktop){
+					background: none;
+				}
+			}
+
+			&:after{
+				display: none;
+
+				@include bp(desktop) {
+					background: none;
+				}
+			}
+
+			@include transition();
+
+		}
 
 		@include bp(desktop){
 			text-align: left;
 
-			max-width:130px;
+			max-width:126px;
 			vertical-align: middle;
-			padding: 0 15px;
-
-			&:last-child {
-				padding-right: 0;
-			}
+			padding: 0 10px;
 
 		}
 	}
 }
 
-.header-input-search {
-	width: 200px;
-}
 
 .header-content {
-	padding: 60px 0 40px;
+	clear: both;
+	padding: 40px 0 40px;
 	width: 100%;
 	vertical-align: middle;
 
 	@include bp(desktop) {
+		padding-top: 60px;
 		max-width: 640px;
 	}
 }
