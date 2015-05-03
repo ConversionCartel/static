@@ -1,0 +1,54 @@
+.h2, .h3{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.h2{
+	font-size: 45px;
+}
+
+.subheading {
+	font-family: 'Open Sans Light 300', sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.4;
+
+	margin: 0;
+	padding: 10px 0;
+}
+
+.list-inline{
+	display: block;
+	list-style: none;
+
+	@include bp(desktop){
+		display: inline-block;
+	}
+}
+
+.list-inline-item {
+	display: block;
+
+	@include bp(desktop){
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+/** FORM  ***/
+
+.input {
+	background-color: $tertiary;
+
+	border-radius: 4px;
+	border-width: 1px;
+	border-color: $input_border;
+
+	padding: 5px;
+
+	color: $light_gray;
+}
+
+/*** MISC ***/
+.icon-padded{
+	padding: 5px 20px;
+}
