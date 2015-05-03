@@ -7,3 +7,147 @@
 /*------------------------------------*\
     #Global Settings / Variables
 \*------------------------------------*/
+a, a:link, a:visited {
+  color: #524c45;
+  text-decoration: none;
+  position: relative; }
+  a:after, a:link:after, a:visited:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    width: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s; }
+  a:hover, a:link:hover, a:visited:hover {
+    color: #8dc63f; }
+    a:hover:after, a:link:hover:after, a:visited:hover:after {
+      width: 100%;
+      height: 1px;
+      background: #8dc63f; }
+
+.footer-container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 91px auto 80px;
+  font-size: .875rem; }
+  .footer-container a, .footer-container a:link, .footer-container a:visited {
+    color: #524c45;
+    text-decoration: none;
+    position: relative; }
+    .footer-container a:after, .footer-container a:link:after, .footer-container a:visited:after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      width: 0;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      transition: all .3s; }
+    .footer-container a:hover, .footer-container a:link:hover, .footer-container a:visited:hover {
+      color: #8dc63f; }
+      .footer-container a:hover:after, .footer-container a:link:hover:after, .footer-container a:visited:hover:after {
+        width: 100%;
+        height: 1px;
+        background: #8dc63f; }
+  .footer-container p {
+    font-size: 1rem;
+    line-height: 1.4; }
+  .footer-container ul {
+    list-style: none;
+    margin-bottom: 35px; }
+    .footer-container ul li {
+      margin-bottom: 5px; }
+  .footer-container .footer-headline {
+    font-size: .875rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+    text-transform: uppercase; }
+  .footer-container .footer-logo {
+    width: 200px;
+    margin-bottom: 43px; }
+  .footer-container .address {
+    margin-bottom: 35px; }
+  .footer-container .footer-contact {
+    margin-bottom: 35px; }
+    @media (min-width: 480px) {
+      .footer-container .footer-contact {
+        margin-bottom: 20px; } }
+  .footer-container .col-av-4 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; }
+    @media (min-width: 480px) {
+      .footer-container .col-av-4 {
+        width: 49%;
+        padding: 0 15px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left; } }
+    @media (min-width: 1024px) {
+      .footer-container .col-av-4 {
+        width: 24%; } }
+  .footer-container .social-facebook, .footer-container .social-twitter {
+    font-size: 1.3rem; }
+  .footer-container .social-facebook:link {
+    color: #3b5998;
+    margin: 0 10px 0 20px; }
+  .footer-container .social-twitter:link {
+    color: #4099FF; }
+  .footer-container .btn-donate:link, .footer-container .btn-donate:visited {
+    display: block;
+    margin: 35px auto 0;
+    padding: 20px 10px;
+    width: 80%;
+    background-color: #fcb040;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s; }
+    .footer-container .btn-donate:link:hover, .footer-container .btn-donate:visited:hover {
+      color: #ffffff;
+      box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5); }
+      .footer-container .btn-donate:link:hover:after, .footer-container .btn-donate:visited:hover:after {
+        content: none; }
+    @media (min-width: 480px) {
+      .footer-container .btn-donate:link, .footer-container .btn-donate:visited {
+        width: 100px;
+        margin: 35px 0 0;
+        padding: 10px; } }
+
+.footer-copyright {
+  width: 100%;
+  background-color: #e1e1e1;
+  padding: 25px 0 30px;
+  text-align: center; }
+  .footer-copyright p {
+    max-width: 1140px;
+    margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .footer-copyright {
+      text-align: left; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+html, body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: #524c45;
+  text-align: left;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased; }

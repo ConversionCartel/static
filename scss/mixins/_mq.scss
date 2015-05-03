@@ -9,6 +9,9 @@
 	@else if $point == phone {
 		@media (min-width: 480px)  { @content; }
 	}
+	@else if $point == iphone {
+		@media (min-width: 320px)  { @content; }
+	}
 
 
 }

@@ -7,4 +7,20 @@
  */
 @import "_settings.colors";
 @import "_settings.global";
+@import "mixins/_mq";
 @import "footer/_footer";
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html, body {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: $dark;
+	text-align: left;
+	word-wrap: break-word;
+	-webkit-font-smoothing: antialiased;
+}
