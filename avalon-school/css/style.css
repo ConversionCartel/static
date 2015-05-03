@@ -416,30 +416,93 @@ html, body {
 .prospect {
   background: #fcb040 url('../img/prospect-bg.jpg') no-repeat bottom center/100%;
   width: 100%;
-  padding-bottom: 270px; }
+  padding-bottom: 100px; }
+  @media (min-width: 768px) {
+    .prospect {
+      padding-bottom: 270px; } }
 
 .prospect-container {
-  width: 100%;
-  min-height: 400px;
+  width: 90%;
+  position: relative;
   max-width: 1170px;
   margin: -100px auto 0;
   padding: 38px 35px 50px;
   position: relative;
   z-index: 100;
   background: #fff; }
+  @media (min-width: 768px) {
+    .prospect-container {
+      width: 100%; } }
 
 .sidebar-menu {
   background-color: #948b80;
-  width: 220px;
-  padding-right: 50px;
+  width: 240px;
+  margin-right: 50px;
+  padding: 30px 15px 30px 35px;
   display: inline-block;
+  vertical-align: top;
   font-family: 'Montserrat', sans-serif;
   color: #fff; }
   .sidebar-menu .sidebar-headline {
     font-size: 1.125rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .sidebar-menu ul {
+    list-style: none; }
+    .sidebar-menu ul a, .sidebar-menu ul a:link, .sidebar-menu ul a:visited {
+      color: #fff;
+      text-decoration: none;
+      position: relative; }
+    .sidebar-menu ul a.is-active:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -35px;
+      bottom: 0;
+      width: 20px;
+      height: 100%;
+      background-color: #fcb040; }
+    .sidebar-menu ul li {
+      margin-bottom: 20px; }
 
 .content-container {
-  width: 70%;
-  display: inline-block;
-  background-color: #303030; }
+  width: 100%;
+  display: block;
+  padding-bottom: 50px; }
+  @media (min-width: 1024px) {
+    .content-container {
+      width: 70%;
+      display: inline-block; } }
+  .content-container .content-headline {
+    margin-bottom: 25px;
+    font-size: 1.875rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fcb040; }
+  .content-container .content-subhead {
+    font-size: 1.375rem;
+    margin-bottom: 35px; }
+  .content-container p {
+    margin-bottom: 50px; }
+  .content-container hr {
+    margin-bottom: 50px;
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1; }
+  .content-container .btn:link, .content-container .btn:visited {
+    display: block;
+    max-width: 310px;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: #8dc63f;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s; }
+    .content-container .btn:link:hover, .content-container .btn:visited:hover {
+      box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5); }
