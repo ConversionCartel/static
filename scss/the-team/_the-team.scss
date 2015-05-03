@@ -1,0 +1,98 @@
+.the-team {
+	background: $accent url('../img/prospect-bg.jpg') no-repeat bottom center / 100%;
+	width: 100%;
+	padding-bottom: 100px;
+
+	@include bp(tablet) {
+		padding-bottom: 270px;
+	}
+}
+.the-team-container {
+	width: 90%;
+	position: relative;
+	max-width: 1170px;
+	margin: -100px auto 0;
+	padding: 38px 35px 50px;
+	position: relative;
+	z-index: 100;
+	background: #fff;
+
+	@include bp(tablet) {
+		width: 100%;
+	}
+}
+.content-container {
+	width: 100%;
+	display: block;
+	padding-bottom: 50px;
+
+	@include bp(desktop) {
+		width: 70%;
+		display: inline-block;
+	}
+
+	.content-headline {
+		margin-bottom: 25px;
+		font-size: 1.875rem;
+		font-family: 'Montserrat', sans-serif;
+		color: $accent;
+	}
+	.content-subhead {
+		font-size: 1.375rem;
+		margin-bottom: 35px;
+	}
+
+}
+
+.meet-the-team {
+	width: 100%;
+	 .team-listing {
+	 	list-style: none;
+
+		li {
+			margin-bottom: 30px;
+			display: inline-block;
+			width: 100%;
+			vertical-align: top;
+			text-align: center;
+				-webkit-transition: all .3s;
+				-moz-transition: all .3s;
+				-ms-transition: all .3s;
+				transition: all .3s;
+
+			@include bp(phone) {
+				width: 49%;
+			}
+			@include bp(tablet) {
+				width: 32%;
+			}
+			@include bp(desktop) {
+				width: 16%;
+			}
+
+			&:hover {
+				-webkit-transform: scale(1.05,1.05);
+				-moz-transform: scale(1.05,1.05);
+				-o-transform: scale(1.05,1.05);
+				transform: scale(1.05,1.05);
+			}
+
+			img.team {
+				margin-bottom: 5px;
+				width: 149px;
+				height: 149px;
+				border-radius: 50%;
+				border: 3px solid #f0f5f7;
+			}
+			.team-name {
+				font-size: .875rem;
+				font-family: 'Montserrat', sans-serif;
+				color: $dark;
+			}
+			.team-title {
+				font-size: .875rem;
+			}
+		}
+	 }
+}
+
