@@ -8,4 +8,8 @@ $(function() {
 
 		return false;
 	});
+	$('.sidebar-toggle').on('click', function() {
+		$(this).toggleClass('toggle-is-active');
+		$('.sidebar-menu').toggleClass('sidebar-is-active');
+	});
 });

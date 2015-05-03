@@ -1,1 +1,1 @@
-$(function(){$(".sidebar-menu a").on("click",function(){return $(".sidebar-menu a").hasClass("is-active")&&$("a").removeClass("is-active"),$(this).addClass("is-active"),!1})});
+$(function(){$(".sidebar-menu a").on("click",function(){return $(".sidebar-menu a").hasClass("is-active")&&$("a").removeClass("is-active"),$(this).addClass("is-active"),!1}),$(".sidebar-toggle").on("click",function(){$(this).toggleClass("toggle-is-active"),$(".sidebar-menu").toggleClass("sidebar-is-active")})});

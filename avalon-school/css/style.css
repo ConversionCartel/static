@@ -297,6 +297,26 @@ html, body {
     .prospect-container {
       width: 100%; } }
 
+.sidebar-toggle {
+  position: absolute;
+  top: 0;
+  left: 240px;
+  background-color: #00aeef;
+  padding: 10px 20px;
+  font-size: 2rem;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s; }
+  @media (min-width: 1024px) {
+    .sidebar-toggle {
+      display: none; } }
+
+.toggle-is-active {
+  top: -10px;
+  left: -10px;
+  transform: scale(.8, .8); }
+
 .sidebar-menu {
   background-color: #948b80;
   width: 240px;
@@ -305,7 +325,29 @@ html, body {
   display: inline-block;
   vertical-align: top;
   font-family: 'Montserrat', sans-serif;
-  color: #fff; }
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  transition: all .3s;
+  -webkit-transform: translateX(-260px);
+  -moz-transform: translateX(-260px);
+  -o-transform: translateX(-260px);
+  transform: translateX(-260px); }
+  @media (min-width: 768px) {
+    .sidebar-menu {
+      -webkit-transform: translateX(-240px);
+      -moz-transform: translateX(-240px);
+      -o-transform: translateX(-240px);
+      transform: translateX(-240px); } }
+  @media (min-width: 1024px) {
+    .sidebar-menu {
+      position: static;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0); } }
   .sidebar-menu .sidebar-headline {
     font-size: 1.125rem;
     text-transform: uppercase;
@@ -327,6 +369,18 @@ html, body {
       background-color: #fcb040; }
     .sidebar-menu ul li {
       margin-bottom: 20px; }
+
+.sidebar-is-active {
+  -webkit-transform: translateX(-23px);
+  -moz-transform: translateX(-23px);
+  -ms-transform: translateX(-23px);
+  transform: translateX(-23px); }
+  @media (min-width: 768px) {
+    .sidebar-is-active {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0); } }
 
 .content-container {
   width: 100%;
