@@ -7,8 +7,9 @@
  */
 @import "_settings.colors";
 @import "_settings.global";
+
 @import "mixins/_mq";
-@import "footer/_footer";
+
 
 * {
 	margin: 0;
@@ -24,3 +25,10 @@ html, body {
 	word-wrap: break-word;
 	-webkit-font-smoothing: antialiased;
 }
+
+/** Partials */
+@import "base";
+
+@import "header/header";
+
+@import "footer/_footer";
