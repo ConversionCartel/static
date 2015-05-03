@@ -52,13 +52,22 @@
 }
 
 .column{
-	display: inline-block;
-	vertical-align: middle;
+
+	display: block;
+
+	@include bp(desktop) {
+		display: inline-block;
+		vertical-align: middle;
+	}
 }
 
 .column-one-third {
-	width: 375px / 1170px * 100%;
-	height: 100%;
+	width: 100%;
+
+	@include bp(desktop){
+		width: 375px / 1170px * 100%;
+		height: 100%;
+	}
 }
 
 /** FORM  ***/

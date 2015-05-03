@@ -8,21 +8,29 @@
 	}
 }
 .home-container {
-	width: 90%;
+	width: 100%;
 	position: relative;
 	max-width: 1170px;
-	margin: -100px auto 0;
+	margin: -230px auto 0;
 	padding: 25px 35px 50px;
 	position: relative;
 	z-index: 100;
-	background: #fff;
 
 	@include bp(tablet) {
+		margin-top: -100px;
 		width: 100%;
+		background: #fff;
 	}
 }
 
 .home-three-columns {
+
+	margin-bottom: 50px;
+
+	@include bp(desktop) {
+		margin-bottom: 0;
+	}
+
 	> .column {
 		text-align: center;
 
@@ -45,28 +53,6 @@
 		line-height: 1.4;
 		margin: 10px 0 25px;
 	}
-
-	&.orange {
-		background-color: $accent;
-		@include bp(desktop) {
-			color: $accent;
-			background: none;
-		}
-	}
-	&.blue {
-		background-color: $secondary;
-		@include bp(desktop) {
-			color: $secondary;
-			background: none;
-		}
-	}
-	&.green {
-		background-color: $primary;
-		@include bp(desktop) {
-			color: $primary;
-			background: none;
-		}
-	}
 }
 
 .home-intro-img {
@@ -81,7 +67,39 @@
 }
 
 .home-intro-link {
-	&:link, &:active {
+	display: block;
+	position: relative;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	padding: 15px 25px 15px 15px;
+	text-align: left;
+	border-radius: 8px;
+	margin: 10px 15px;
+
+	:before {
+		content: "\f054";
+		font-family: 'FontAwesome';
+		display: block;
+		position: absolute;
+		right: 20px;
+
+		@include bp(desktop) {
+			display: none;
+		}
+
+	}
+
+	@include bp(desktop) {
+		min-height: 45px;
+		text-align: center;
+		border-radius: 0;
+		margin: 0;
+	}
+
+	&:link, &:visited {
+
+		color: $tertiary;
 		text-decoration: none;
 
 		@include bp(desktop) {
@@ -90,9 +108,41 @@
 	}
 
 	&:hover{
+		color: $tertiary !important;
+		cusor: pointer;
 		@include bp(desktop) {
 			text-decoration: underline
 		}
+	}
+
+	&.orange {
+		background-color: $accent;
+		@include bp(desktop) {
+			background: none;
+			color: $accent;
+		}
+	}
+	&.blue {
+		background-color: $secondary;
+		@include bp(desktop) {
+			background: none;
+			color: $secondary;
+		}
+	}
+	&.green {
+		background-color: $primary;
+		@include bp(desktop) {
+			background: none;
+			color: $primary;
+		}
+	}
+}
+
+.home-intro-text {
+	display: none;
+
+	@include bp(desktop) {
+		display: block;
 	}
 }
 
