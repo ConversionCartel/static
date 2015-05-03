@@ -7,3 +7,8 @@
  */
 @import "_settings.colors";
 @import "_settings.global";
+@import "mixins/_mq";
+
+@import "_headings.global";
+
+@import "header/header";

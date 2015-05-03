@@ -7,3 +7,45 @@
 /*------------------------------------*\
     #Global Settings / Variables
 \*------------------------------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: 0; }
+
+.h2, .h3 {
+  font-family: 'Montserrat', sans-serif; }
+
+.h2 {
+  font-size: 45px; }
+  .h2 > small {
+    font-family: 'Open Sans Light 300', sans-serif;
+    font-size: 22px;
+    font-weight: 300; }
+
+.header {
+  position: relative;
+  background: #716558 url("../img/Home_Top_Bkd.jpg") top center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  height: 100%;
+  max-height: 515px;
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .header {
+      max-height: 656px; } }
+
+.header-inner-container {
+  margin: 0 auto;
+  padding: 50px 0; }
+  @media (min-width: 1024px) {
+    .header-inner-container {
+      max-width: 1175px; } }
+
+.logo {
+  margin: 0;
+  padding: 0; }

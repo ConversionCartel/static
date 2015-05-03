@@ -1,0 +1,36 @@
+
+//@import "modules/_search";
+
+.header{
+	position: relative;
+	background: $light url("../img/Home_Top_Bkd.jpg") top center no-repeat;
+	background-size: cover;
+
+	color: $tertiary;
+
+	height: 100%;
+	max-height: 515px;
+
+	width: 100%;
+
+	@include bp(desktop){
+		max-height: 656px;
+	}
+
+}
+
+.header-inner-container{
+	margin: 0 auto;
+	padding: 50px 0;
+
+	@include bp(desktop){
+		max-width: 1175px;
+	}
+}
+
+.logo{
+	margin: 0;
+	padding: 0;
+
+
+}
