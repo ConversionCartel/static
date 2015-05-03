@@ -49,8 +49,14 @@ html, body {
     .subheading {
       font-size: 22px; } }
 
+.content-subheading {
+  font-size: 30px; }
+
 .uppercase {
   text-transform: uppercase; }
+
+.center {
+  text-align: center; }
 
 .list-inline {
   display: block;
@@ -66,20 +72,31 @@ html, body {
       display: inline-block;
       vertical-align: top; } }
 
+.container-full-width {
+  width: 100%;
+  position: relative;
+  max-width: 1170px; }
+
+.content-full-width {
+  padding: 0 10px; }
+  @media (min-width: 1024px) {
+    .content-full-width {
+      padding: 25px 50px 20px 50px; } }
+
 /** Columns */
 .columns {
   width: 100%; }
 
 .column {
   display: block; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .column {
       display: inline-block;
       vertical-align: middle; } }
 
 .column-one-third {
   width: 100%; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .column-one-third {
       width: 32.05128%;
       height: 100%; } }
@@ -92,6 +109,25 @@ html, body {
   border-color: #e1e1e1;
   padding: 5px;
   color: #a6a5a4; }
+
+/* BUTTONS */
+.button {
+  display: block;
+  max-width: 310px;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  border-radius: 3px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s; }
+  .button:hover {
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5); }
 
 /*** MISC ***/
 .icon-padded {
@@ -433,35 +469,37 @@ html, body {
       text-align: left; } }
 
 .home {
-  background: #fcb040 url('../img/Students_green.png') no-repeat bottom center/100%;
+  background: #8dc63f url('../img/Students_green.png') no-repeat bottom center/100%;
   width: 100%;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
   @media (min-width: 768px) {
     .home {
-      padding-bottom: 270px; } }
+      padding-bottom: 100px; } }
 
-.home-container {
+.home-intro-container {
   width: 100%;
   position: relative;
   max-width: 1170px;
-  margin: -230px auto 0;
-  padding: 25px 35px 50px;
-  position: relative;
+  margin: -250px auto 0;
+  padding: 25px 35px 0px;
   z-index: 100; }
+  @media (min-width: 480px) {
+    .home-intro-container {
+      padding-bottom: 50px; } }
   @media (min-width: 768px) {
-    .home-container {
+    .home-intro-container {
       margin-top: -100px;
       width: 100%;
       background: #fff; } }
 
 .home-three-columns {
   margin-bottom: 50px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .home-three-columns {
       margin-bottom: 0; } }
   .home-three-columns > .column {
     text-align: center; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .home-three-columns > .column {
         border-right: 1px solid #a6a5a4;
         min-height: 300px;
@@ -470,14 +508,14 @@ html, body {
       border: none;
       padding-right: 0; }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .home-intro-header {
     line-height: 1.4;
     margin: 10px 0 25px; } }
 
 .home-intro-img {
   display: none; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .home-intro-img {
       height: 65px;
       margin: 0 auto 10px;
@@ -502,7 +540,7 @@ html, body {
     @media (min-width: 1024px) {
       .home-intro-link :before {
         display: none; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .home-intro-link {
       min-height: 45px;
       text-align: center;
@@ -514,31 +552,31 @@ html, body {
   .home-intro-link:hover {
     color: #ffffff !important;
     cusor: pointer; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .home-intro-link:hover {
         text-decoration: underline; } }
   .home-intro-link.orange {
     background-color: #fcb040; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .home-intro-link.orange {
         background: none;
         color: #fcb040; } }
   .home-intro-link.blue {
     background-color: #00aeef; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .home-intro-link.blue {
         background: none;
         color: #00aeef; } }
   .home-intro-link.green {
     background-color: #8dc63f; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .home-intro-link.green {
         background: none;
         color: #8dc63f; } }
 
 .home-intro-text {
   display: none; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .home-intro-text {
       display: block; } }
 
@@ -573,47 +611,15 @@ html, body {
     .sidebar-menu ul li {
       margin-bottom: 20px; }
 
-.content-container {
-  width: 100%;
-  display: block;
-  padding-bottom: 50px; }
+.home-sub-content {
+  color: #ffffff;
+  text-align: center; }
+  @media (min-width: 480px) {
+    .home-sub-content {
+      padding-top: 50px; } }
   @media (min-width: 1024px) {
-    .content-container {
-      width: 70%;
-      display: inline-block; } }
-  .content-container .content-headline {
-    margin-bottom: 25px;
-    font-size: 1.875rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #fcb040; }
-  .content-container .content-subhead {
-    font-size: 1.375rem;
-    margin-bottom: 35px; }
-  .content-container p {
-    margin-bottom: 50px; }
-  .content-container hr {
-    margin-bottom: 50px;
-    width: 100%;
-    height: 1px;
-    background-color: #e1e1e1; }
-  .content-container .btn:link, .content-container .btn:visited {
-    display: block;
-    max-width: 310px;
-    width: 100%;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-    font-size: 1.125rem;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    background-color: #8dc63f;
-    border-radius: 3px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s; }
-    .content-container .btn:link:hover, .content-container .btn:visited:hover {
-      box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5); }
+    .home-sub-content {
+      padding-top: 160px; } }
 
 .prospect {
   background: #fcb040 url('../img/prospect-bg.jpg') no-repeat bottom center/100%;

@@ -13,10 +13,6 @@
 
 	width: 100%;
 
-	@include bp(desktop){
-		//height: 656px;
-	}
-
 	a, a:link, a:visited {
 		color: $tertiary;
 		text-decoration: none;
