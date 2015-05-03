@@ -20,7 +20,8 @@
 		color: $tertiary;
 		text-decoration: none;
 		position: relative;
-		font-family: 'Montserrat Regular', sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
 
 		&:after{
 			content: '';
@@ -126,12 +127,16 @@
 	margin: 10px 0;
 	padding: 0;
 
-	max-width: 175px;
+	max-width: 160px;
 
 	@include bp(desktop) {
-		max-width: 200px;
+		max-width: 160px;
 		display: block;
 		float: left;
+	}
+
+	@include bp(wider-desktop) {
+		max-width: 200px;
 	}
 
 	img {
@@ -144,27 +149,77 @@
 
 }
 
+.menu-bar {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	right: 20px;
+	text-align: right;
+	width: 100%;
+	padding-right: 20px;
+
+	.fa{
+		font-size: 45px;
+	}
+
+	&:hover{
+		&:after{
+			display: none;
+		}
+	}
+
+	@include bp(desktop) {
+		display: none;
+	}
+}
+
 .menu {
 	margin: 20px 0;
 
 	display: block;
-	background-color: rgba(1, 1, 1, 0.9);
 	width: 100%;
 	max-width: 200px;
-	position: absolute;
-	top: 20px;
-	right: 0;
-
-	padding: 10px 0;
-
 
 	@include bp(desktop) {
-		position: static;
-		display: block;
-		background: none;
 	  	vertical-align: top;
 	  	float: right;
-	  	max-width: 728px;
+	  	max-width: 760px;
+	}
+
+	@include bp(wider-desktop) {
+		max-width: 785px;
+	}
+
+	.list-inline {
+		background-color: rgba(1, 1, 1, 0.9);
+		padding: 10px 0;
+		position: absolute;
+		top: 110px;
+		right: -220px;
+
+		@include translate(0px);
+
+		@include bp(desktop) {
+			position: static;
+			background: none;
+		}
+
+		&.is-active{
+			@include translate(-220px);
+
+			@include bp(desktop) {
+				-moz-transform: translateX(0px);
+				-o-transform: translateX(0px);
+				-webkit-transform: translateX(0px);
+				transform: translateX(0px);
+			}
+
+		}
+
+		@include transition(all, 1.5s, ease-in-out);
+
+
 	}
 
 	.list-inline-item {
@@ -182,9 +237,15 @@
 		a{
 			display: block;
 			padding: 10px 20px;
+			font-size: 14px;
 
 			@include bp(desktop){
 				padding: 0;
+				font-size: 13px;
+			}
+
+			@include bp(wider-desktop) {
+				font-size: 14px;
 			}
 
 			&:hover{
@@ -211,20 +272,23 @@
 		@include bp(desktop){
 			text-align: left;
 
-			max-width:120px;
+			max-width:126px;
 			vertical-align: middle;
 			padding: 0 10px;
 
 		}
 	}
 }
+
+
 .header-content {
 	clear: both;
-	padding: 60px 0 40px;
+	padding: 40px 0 40px;
 	width: 100%;
 	vertical-align: middle;
 
 	@include bp(desktop) {
+		padding-top: 60px;
 		max-width: 640px;
 	}
 }

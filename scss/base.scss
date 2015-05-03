@@ -60,3 +60,10 @@
 .icon-padded{
 	padding: 5px 20px;
 }
+
+.mobile-only{
+
+	@include bp(desktop) {
+		display: none;
+	}
+}
