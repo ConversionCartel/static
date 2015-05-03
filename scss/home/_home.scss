@@ -1,32 +1,43 @@
 .home {
-	background: $accent url('../img/Students_green.png') no-repeat bottom center / 100%;
+	background: $primary url('../img/Students_green.png') no-repeat bottom center / 100%;
 	width: 100%;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 
 	@include bp(tablet) {
-		padding-bottom: 270px;
+		padding-bottom: 100px;
 	}
 }
-.home-container {
-	width: 90%;
+.home-intro-container {
+	width: 100%;
 	position: relative;
 	max-width: 1170px;
-	margin: -100px auto 0;
-	padding: 25px 35px 50px;
-	position: relative;
+	margin: -250px auto 0;
+	padding: 25px 35px 0px;
 	z-index: 100;
-	background: #fff;
+
+	@include bp(phone) {
+		padding-bottom: 50px;
+	}
 
 	@include bp(tablet) {
+		margin-top: -100px;
 		width: 100%;
+		background: #fff;
 	}
 }
 
 .home-three-columns {
+
+	margin-bottom: 50px;
+
+	@include bp(tablet) {
+		margin-bottom: 0;
+	}
+
 	> .column {
 		text-align: center;
 
-		@include bp(desktop) {
+		@include bp(tablet) {
 			border-right: 1px solid $light_gray;
 			min-height: 300px;
 			padding: 20px;
@@ -41,38 +52,16 @@
 
 .home-intro-header {
 
-	@include bp(desktop) {
+	@include bp(tablet) {
 		line-height: 1.4;
 		margin: 10px 0 25px;
-	}
-
-	&.orange {
-		background-color: $accent;
-		@include bp(desktop) {
-			color: $accent;
-			background: none;
-		}
-	}
-	&.blue {
-		background-color: $secondary;
-		@include bp(desktop) {
-			color: $secondary;
-			background: none;
-		}
-	}
-	&.green {
-		background-color: $primary;
-		@include bp(desktop) {
-			color: $primary;
-			background: none;
-		}
 	}
 }
 
 .home-intro-img {
 	display: none;
 
-	@include bp(desktop) {
+	@include bp(tablet) {
 		height: 65px;
 		margin: 0 auto 10px;
 		display: block;
@@ -81,18 +70,80 @@
 }
 
 .home-intro-link {
-	&:link, &:active {
-		text-decoration: none;
+	display: block;
+	position: relative;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	padding: 15px 25px 15px 15px;
+	text-align: left;
+	border-radius: 8px;
+	margin: 10px 15px;
+
+	:before {
+		content: "\f054";
+		font-family: 'FontAwesome';
+		display: block;
+		position: absolute;
+		right: 20px;
 
 		@include bp(desktop) {
-
+			display: none;
 		}
+
+	}
+
+	@include bp(tablet) {
+		min-height: 45px;
+		text-align: center;
+		border-radius: 0;
+		margin: 0;
+	}
+
+	&:link, &:visited {
+
+		color: $tertiary;
+		text-decoration: none;
 	}
 
 	&:hover{
-		@include bp(desktop) {
+		color: $tertiary;
+		cusor: pointer;
+		@include bp(tablet) {
+			color: $dark;
 			text-decoration: underline
 		}
+	}
+
+	&.orange {
+		background-color: $accent;
+		@include bp(tablet) {
+			background: none;
+			color: $accent;
+		}
+
+	}
+	&.blue {
+		background-color: $secondary;
+		@include bp(tablet) {
+			background: none;
+			color: $secondary;
+		}
+	}
+	&.green {
+		background-color: $primary;
+		@include bp(tablet) {
+			background: none;
+			color: $primary;
+		}
+	}
+}
+
+.home-intro-text {
+	display: none;
+
+	@include bp(tablet) {
+		display: block;
 	}
 }
 
@@ -138,58 +189,21 @@
 	}
 
 }
-.content-container {
-	width: 100%;
-	display: block;
-	padding-bottom: 50px;
+
+.home-subcontent {
+	color: $tertiary;
+	text-align: center;
+
+	@include bp(phone) {
+		padding-top: 50px;
+	}
 
 	@include bp(desktop) {
-		width: 70%;
-		display: inline-block;
+		padding-top: 160px;
 	}
+}
 
-	.content-headline {
-		margin-bottom: 25px;
-		font-size: 1.875rem;
-		font-family: 'Montserrat', sans-serif;
-		color: $accent;
-	}
-	.content-subhead {
-		font-size: 1.375rem;
-		margin-bottom: 35px;
-	}
-
-	p {
-		margin-bottom: 50px;
-	}
-
-	hr {
-		margin-bottom: 50px;
-		width: 100%;
-		height: 1px;
-		background-color: $input-border;
-	}
-
-	.btn:link, .btn:visited {
-		display: block;
-		max-width: 310px;
-		width: 100%;
-		padding: 20px;
-		color: #fff;
-		text-align: center;
-		font-size: 1.125rem;
-		font-family: 'Montserrat', sans-serif;
-		text-decoration: none;
-		background-color: $primary;
-		border-radius: 3px;
-			-webkit-transition: all .3s;
-			-moz-transition: all .3s;
-			-ms-transition: all .3s;
-			transition: all .3s;
-
-		&:hover {
-			box-shadow: inset 0px 0px 6px rgba(0,0,0,.5);
-		}
-	}
+.home-subcontent-3 {
+	background: url('../img/Logo_Mark_Transparent.png') top left no-repeat;
 }
 

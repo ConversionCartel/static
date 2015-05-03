@@ -1,5 +1,5 @@
 .h2, .h3, .h4{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat Bold', sans-serif;
 }
 
 .h2{
@@ -24,8 +24,30 @@
 	}
 }
 
+.content-subheading {
+	font-size: 30px;
+}
+
+.minor-heading {
+	color: $dark;
+}
+
 .uppercase {
 	text-transform: uppercase;
+}
+
+.center {
+	text-align: center;
+}
+
+.list-list {
+	list-style: none;
+	margin: 10px 0;
+}
+
+.list-list-item {
+	text-align: left;
+	padding: 3px 0;
 }
 
 .list-inline{
@@ -46,19 +68,56 @@
 	}
 }
 
+.container-full-width{
+	width: 100%;
+	position: relative;
+}
+
+.content-full-width {
+	padding: 0 10px;
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+
+	@include bp(desktop){
+		padding: 25px 0px 20px 50px;
+	}
+}
+
+.center-text-content{
+	text-align: center;
+	padding: 50px 0;
+}
+
+.left-text-content{
+	text-align: left;
+	padding: 50px;
+	vertical-align: top;
+}
+
 /** Columns */
 .columns{
 	width: 100%;
 }
 
 .column{
-	display: inline-block;
-	vertical-align: middle;
+
+	display: block;
+
+	@include bp(tablet) {
+		display: inline-block;
+		vertical-align: top;
+	}
 }
 
 .column-one-third {
-	width: 375px / 1170px * 100%;
-	height: 100%;
+	width: 100%;
+
+	@include bp(tablet){
+		width: 375px / 1170px * 100%;
+		height: 100%;
+		padding: 0 20px;
+	}
 }
 
 /** FORM  ***/
@@ -75,6 +134,60 @@
 	color: $light_gray;
 }
 
+/* BUTTONS */
+.button{
+	display: inline-block;
+	max-width: 310px;
+	width: 100%;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 10px;
+	border-radius: 3px;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-ms-transition: all .3s;
+		transition: all .3s;
+
+
+	&:link, &:visited{
+		color: $tertiary;
+		text-decoration: none;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+	}
+
+	&:hover {
+		color: $tertiary !important;
+		box-shadow: inset 0px 0px 6px rgba(0,0,0,.5);
+		cursor: pointer;
+		width: 102%;
+	}
+}
+
+.button-orange {
+	&:link, &:visited {
+		background-color: $accent;
+		border: 2px $tertiary solid;
+	}
+
+	&:hover {
+		color: $tertiary;
+	}
+
+}
+
+.button-green {
+
+	&:link, &:visited {
+		border: 2px $tertiary solid;
+		background-color: $primary;
+	}
+}
+
 /*** MISC ***/
 .icon-padded{
 	padding: 5px 20px;
@@ -85,4 +198,56 @@
 	@include bp(desktop) {
 		display: none;
 	}
+}
+
+.primary-bg {
+	background-color: $primary;
+	color: $tertiary;
+}
+
+.blue-square, .orange-square, .green-square{
+	position: relative;
+	text-align: left;
+	padding-left: 25px;
+
+	&:before{
+		@include bp(phone) {
+			content: ' ';
+			display: block;
+			width: 17px;
+			height: 17px;
+			position: absolute;
+			left: 0;
+		}
+	}
+}
+
+.blue-square {
+	&:before {
+		@include bp(phone) {
+			background-color: $secondary;
+		}
+	}
+}
+
+.orange-square {
+	&:before {
+		@include bp(phone) {
+			background-color: $accent;
+		}
+	}
+}
+
+.green-square {
+	&:before {
+		@include bp(phone) {
+			background-color: $primary;
+		}
+	}
+}
+
+.tag {
+	background-color: #eae8e6;
+	padding: 0 2px;
+	margin-right: 3px;
 }

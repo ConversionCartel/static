@@ -3,18 +3,15 @@
 
 .header{
 	position: relative;
+	overflow: hidden;
 	display: block;
 	background: $light url("../img/Home_Top_Bkd.jpg") top center no-repeat;
 	background-size: cover;
 
 	color: $tertiary;
-	height: 515px;
+	height: 100%;
 
 	width: 100%;
-
-	@include bp(desktop){
-		height: 656px;
-	}
 
 	a, a:link, a:visited {
 		color: $tertiary;
@@ -50,10 +47,10 @@
 
 .header-inner-container{
 	margin: 0 auto;
-	padding: 10px;
+	padding: 10px 20px 200px;
 
 	@include bp(desktop){
-		padding: 20px 50px;
+		padding: 20px 20px 150px 20px;
 		max-width: 1175px;
 	}
 }
@@ -217,7 +214,7 @@
 
 		}
 
-		@include transition(all, 1.5s, ease-in-out);
+		@include transition(all, .8s, ease-in-out);
 
 
 	}
