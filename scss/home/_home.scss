@@ -203,7 +203,10 @@
 	}
 }
 
-.home-subcontent-3 {
-	background: url('../img/Logo_Mark_Transparent.png') top left no-repeat;
-}
+/*.home-subcontent-3 {
+	
+	@include bp(tablet) {
+		background: url('../img/Logo_Mark_Transparent.png') top left no-repeat;
+	}
+}*/
 

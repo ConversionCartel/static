@@ -90,10 +90,12 @@ html, body {
 .content-full-width {
   padding: 0 10px;
   width: 100%;
-  max-width: 1170px; }
+  max-width: 1170px;
+  margin: 0 auto; }
   @media (min-width: 1024px) {
     .content-full-width {
-      padding: 25px 0px 20px 50px; } }
+      padding: 25px 0px 20px 50px;
+      margin: 0 auto; } }
 
 .center-text-content {
   text-align: center;
@@ -420,7 +422,7 @@ html, body {
     @media (min-width: 1024px) {
       .menu .list-inline-item {
         text-align: left;
-        max-width: 126px;
+        max-width: 115px;
         vertical-align: middle;
         padding: 0 10px; } }
 
@@ -697,6 +699,12 @@ html, body {
     .home-subcontent {
       padding-top: 160px; } }
 
+/*.home-subcontent-3 {
+	
+	@include bp(tablet) {
+		background: url('../img/Logo_Mark_Transparent.png') top left no-repeat;
+	}
+}*/
 .prospect {
   background: #fcb040 url('../img/prospect-bg.jpg') no-repeat bottom center/100%;
   width: 100%;
