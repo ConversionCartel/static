@@ -734,6 +734,9 @@ html, body {
   .about-us .about-hiring {
     font-size: 1.125rem;
     text-align: center; }
+    .about-us .about-hiring a {
+      color: #524c45;
+      text-decoration: underline; }
 
 .about-us-container {
   width: 90%;

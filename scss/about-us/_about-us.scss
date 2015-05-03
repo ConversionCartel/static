@@ -16,6 +16,11 @@
 	.about-hiring {
 		font-size: 1.125rem;
 		text-align: center;
+
+		a {
+			color: $dark;
+			text-decoration: underline;
+		}
 	}
 }
 .about-us-container {
