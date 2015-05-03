@@ -90,11 +90,11 @@
 	.social-facebook, .social-twitter {
 		font-size: 1.3rem;
 	}
-	.social-facebook:link {
+	.social-facebook:link, .social-facebook:visited {
 		color: #3b5998;
 		margin: 0 10px 0 20px;
 	}
-	.social-twitter:link {
+	.social-twitter:link, .social-twitter:visited {
 		color: #4099FF;
 	}
 
