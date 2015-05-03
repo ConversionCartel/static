@@ -8,26 +8,11 @@
     #Global Settings / Variables
 \*------------------------------------*/
 a, a:link, a:visited {
-  color: #524c45;
-  text-decoration: none;
+  color: #8dc63f;
+  text-decoration: underline;
   position: relative; }
-  a:after, a:link:after, a:visited:after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    right: 0;
-    width: 0;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s; }
   a:hover, a:link:hover, a:visited:hover {
-    color: #8dc63f; }
-    a:hover:after, a:link:hover:after, a:visited:hover:after {
-      width: 100%;
-      height: 1px;
-      background: #8dc63f; }
+    color: #fcb040; }
 
 * {
   margin: 0;
@@ -265,10 +250,10 @@ html, body {
         width: 24%; } }
   .footer-container .social-facebook, .footer-container .social-twitter {
     font-size: 1.3rem; }
-  .footer-container .social-facebook:link {
+  .footer-container .social-facebook:link, .footer-container .social-facebook:visited {
     color: #3b5998;
     margin: 0 10px 0 20px; }
-  .footer-container .social-twitter:link {
+  .footer-container .social-twitter:link, .footer-container .social-twitter:visited {
     color: #4099FF; }
   .footer-container .btn-donate:link, .footer-container .btn-donate:visited {
     display: block;
