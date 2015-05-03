@@ -5,7 +5,7 @@ var paths = {
 	scriptFiles: './scripts/**/*.js',
 	lessFiles: './less/**/*.less',
 	sassFiles: './scss/**/*.scss',
-	imageFiles: './avalon-school/img/*'
+	imageFiles: './images/*'
 };
 
 gulp.task('build', 'Run `images`, `less` or `sass`, `lint`, `contact`, and `htmltojson` tasks', function(){
