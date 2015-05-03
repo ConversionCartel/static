@@ -30,7 +30,7 @@ html, body {
 
 /** Partials */
 .h2, .h3, .h4 {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat Bold', sans-serif; }
 
 .h2 {
   font-size: 34px; }
@@ -52,11 +52,22 @@ html, body {
 .content-subheading {
   font-size: 30px; }
 
+.minor-heading {
+  color: #524c45; }
+
 .uppercase {
   text-transform: uppercase; }
 
 .center {
   text-align: center; }
+
+.list-list {
+  list-style: none;
+  margin: 10px 0; }
+
+.list-list-item {
+  text-align: left;
+  padding: 3px 0; }
 
 .list-inline {
   display: block;
@@ -74,14 +85,24 @@ html, body {
 
 .container-full-width {
   width: 100%;
-  position: relative;
-  max-width: 1170px; }
+  position: relative; }
 
 .content-full-width {
-  padding: 0 10px; }
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1170px; }
   @media (min-width: 1024px) {
     .content-full-width {
-      padding: 25px 50px 20px 50px; } }
+      padding: 25px 0px 20px 50px; } }
+
+.center-text-content {
+  text-align: center;
+  padding: 50px 0; }
+
+.left-text-content {
+  text-align: left;
+  padding: 50px;
+  vertical-align: top; }
 
 /** Columns */
 .columns {
@@ -92,14 +113,15 @@ html, body {
   @media (min-width: 768px) {
     .column {
       display: inline-block;
-      vertical-align: middle; } }
+      vertical-align: top; } }
 
 .column-one-third {
   width: 100%; }
   @media (min-width: 768px) {
     .column-one-third {
       width: 32.05128%;
-      height: 100%; } }
+      height: 100%;
+      padding: 0 20px; } }
 
 /** FORM  ***/
 .input {
@@ -112,22 +134,41 @@ html, body {
 
 /* BUTTONS */
 .button {
-  display: block;
+  display: inline-block;
   max-width: 310px;
   width: 100%;
   padding: 20px;
   color: #fff;
   text-align: center;
   font-size: 1.125rem;
-  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
+  margin: 10px;
   border-radius: 3px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
   transition: all .3s; }
+  .button:link, .button:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; }
   .button:hover {
-    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5); }
+    color: #ffffff !important;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 102%; }
+
+.button-orange:link, .button-orange:visited {
+  background-color: #fcb040;
+  border: 2px #ffffff solid; }
+.button-orange:hover {
+  color: #ffffff; }
+
+.button-green:link, .button-green:visited {
+  border: 2px #ffffff solid;
+  background-color: #8dc63f; }
 
 /*** MISC ***/
 .icon-padded {
@@ -136,6 +177,40 @@ html, body {
 @media (min-width: 1024px) {
   .mobile-only {
     display: none; } }
+
+.primary-bg {
+  background-color: #8dc63f;
+  color: #ffffff; }
+
+.blue-square, .orange-square, .green-square {
+  position: relative;
+  text-align: left;
+  padding-left: 25px; }
+  @media (min-width: 480px) {
+    .blue-square:before, .orange-square:before, .green-square:before {
+      content: ' ';
+      display: block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 0; } }
+
+@media (min-width: 480px) {
+  .blue-square:before {
+    background-color: #00aeef; } }
+
+@media (min-width: 480px) {
+  .orange-square:before {
+    background-color: #fcb040; } }
+
+@media (min-width: 480px) {
+  .green-square:before {
+    background-color: #8dc63f; } }
+
+.tag {
+  background-color: #eae8e6;
+  padding: 0 2px;
+  margin-right: 3px; }
 
 .header {
   position: relative;
@@ -550,10 +625,11 @@ html, body {
     color: #ffffff;
     text-decoration: none; }
   .home-intro-link:hover {
-    color: #ffffff !important;
+    color: #ffffff;
     cusor: pointer; }
     @media (min-width: 768px) {
       .home-intro-link:hover {
+        color: #524c45;
         text-decoration: underline; } }
   .home-intro-link.orange {
     background-color: #fcb040; }
@@ -611,14 +687,14 @@ html, body {
     .sidebar-menu ul li {
       margin-bottom: 20px; }
 
-.home-sub-content {
+.home-subcontent {
   color: #ffffff;
   text-align: center; }
   @media (min-width: 480px) {
-    .home-sub-content {
+    .home-subcontent {
       padding-top: 50px; } }
   @media (min-width: 1024px) {
-    .home-sub-content {
+    .home-subcontent {
       padding-top: 160px; } }
 
 .prospect {

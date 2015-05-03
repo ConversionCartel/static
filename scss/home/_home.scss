@@ -104,16 +104,13 @@
 
 		color: $tertiary;
 		text-decoration: none;
-
-		@include bp(desktop) {
-
-		}
 	}
 
 	&:hover{
-		color: $tertiary !important;
+		color: $tertiary;
 		cusor: pointer;
 		@include bp(tablet) {
+			color: $dark;
 			text-decoration: underline
 		}
 	}
@@ -124,6 +121,7 @@
 			background: none;
 			color: $accent;
 		}
+
 	}
 	&.blue {
 		background-color: $secondary;
@@ -192,7 +190,7 @@
 
 }
 
-.home-sub-content {
+.home-subcontent {
 	color: $tertiary;
 	text-align: center;
 
@@ -204,3 +202,8 @@
 		padding-top: 160px;
 	}
 }
+
+.home-subcontent-3 {
+	background: url('../img/Logo_Mark_Transparent.png') top left no-repeat;
+}
+
