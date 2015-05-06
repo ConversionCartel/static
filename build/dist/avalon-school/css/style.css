@@ -90,7 +90,8 @@ html, body {
 .content-full-width {
   padding: 0 10px;
   width: 100%;
-  max-width: 1170px; }
+  max-width: 1170px;
+  margin: 0 auto; }
   @media (min-width: 1024px) {
     .content-full-width {
       padding: 25px 0px 20px 50px; } }
@@ -697,6 +698,9 @@ html, body {
     .home-subcontent {
       padding-top: 160px; } }
 
+.home-subcontent-3 {
+  background: url('../img/Logo_Mark_Transparent.png') top left no-repeat; }
+
 .prospect {
   background: #fcb040 url('../img/prospect-bg.jpg') no-repeat bottom center/100%;
   width: 100%;
@@ -923,3 +927,149 @@ html, body {
         color: #524c45; }
       .meet-the-team .team-listing li .team-title {
         font-size: .875rem; }
+
+.about-us {
+  background: #bce08b url('../img/about-us-bg.jpg') no-repeat bottom center/100%;
+  width: 100%;
+  padding-bottom: 100px; }
+  @media (min-width: 768px) {
+    .about-us {
+      padding-bottom: 270px; } }
+  .about-us .section-bottom-subhead {
+    margin: 80px 0 20px;
+    font-size: 1.875rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; }
+  .about-us .about-hiring {
+    font-size: 1.125rem;
+    text-align: center; }
+    .about-us .about-hiring a {
+      color: #524c45;
+      text-decoration: underline; }
+
+.about-us-container {
+  width: 90%;
+  position: relative;
+  max-width: 1170px;
+  margin: -100px auto 0;
+  padding: 38px 35px 50px;
+  position: relative;
+  z-index: 100;
+  background: #fff; }
+  @media (min-width: 768px) {
+    .about-us-container {
+      width: 100%; } }
+
+.sidebar-toggle {
+  position: absolute;
+  top: 0;
+  left: 240px;
+  background-color: #00aeef;
+  padding: 10px 20px;
+  font-size: 2rem;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s; }
+  @media (min-width: 1024px) {
+    .sidebar-toggle {
+      display: none; } }
+
+.toggle-is-active {
+  top: -10px;
+  left: -10px;
+  transform: scale(.8, .8); }
+
+.sidebar-menu {
+  background-color: #948b80;
+  width: 240px;
+  margin-right: 50px;
+  padding: 30px 15px 30px 35px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  transition: all .3s;
+  -webkit-transform: translateX(-260px);
+  -moz-transform: translateX(-260px);
+  -o-transform: translateX(-260px);
+  transform: translateX(-260px); }
+  @media (min-width: 768px) {
+    .sidebar-menu {
+      -webkit-transform: translateX(-240px);
+      -moz-transform: translateX(-240px);
+      -o-transform: translateX(-240px);
+      transform: translateX(-240px); } }
+  @media (min-width: 1024px) {
+    .sidebar-menu {
+      position: static;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0); } }
+  .sidebar-menu .sidebar-headline {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .sidebar-menu ul {
+    list-style: none; }
+    .sidebar-menu ul a, .sidebar-menu ul a:link, .sidebar-menu ul a:visited {
+      color: #fff;
+      text-decoration: none;
+      position: relative; }
+    .sidebar-menu ul a.is-active:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -35px;
+      bottom: 0;
+      width: 20px;
+      height: 100%;
+      background-color: #8dc63f; }
+    .sidebar-menu ul li {
+      margin-bottom: 20px; }
+
+.sidebar-is-active {
+  -webkit-transform: translateX(-23px);
+  -moz-transform: translateX(-23px);
+  -ms-transform: translateX(-23px);
+  transform: translateX(-23px); }
+  @media (min-width: 768px) {
+    .sidebar-is-active {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0); } }
+
+.content-container {
+  width: 100%;
+  display: block;
+  padding-bottom: 50px; }
+  @media (min-width: 1024px) {
+    .content-container {
+      width: 70%;
+      display: inline-block; } }
+  .content-container .content-headline {
+    margin-bottom: 25px;
+    font-size: 1.875rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #8dc63f; }
+  .content-container .about-us-subhead {
+    font-size: 1.375rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #8dc63f;
+    margin-bottom: 35px; }
+  .content-container p.about-paragraph {
+    margin-bottom: 10px; }
+  .content-container .content__inner-sec01, .content-container .content__inner-sec02 {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top; }
+  .content-container .content__inner-sec01 {
+    margin-right: 50px; }
+    .content-container .content__inner-sec01 ul li {
+      margin-left: 30px; }
