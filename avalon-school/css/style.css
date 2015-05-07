@@ -28,6 +28,12 @@ html, body {
   word-wrap: break-word;
   -webkit-font-smoothing: antialiased; }
 
+/* Resetting default styles */
+ol, ul {
+  padding: 0px 25px 30px 45px; }
+  ol > li, ul > li {
+    line-height: 1.5; }
+
 /** Partials */
 .h2, .h3, .h4 {
   font-family: 'Montserrat Bold', sans-serif; }
@@ -60,6 +66,12 @@ html, body {
 
 .center {
   text-align: center; }
+
+.list-normal-ul {
+  list-style: disc; }
+
+.list-normal-ol {
+  list-style: decimal; }
 
 .list-list {
   list-style: none;

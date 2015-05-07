@@ -2,17 +2,14 @@
 $(function(){
 	$('.js--menu').click(function(){
 		$('.ui--menu').toggleClass('is-active');
-		return false;
 	});
 
-	$('.sidebar-menu a').on('click', function() {
-		if ($('.sidebar-menu a').hasClass('is-active')) {
-			$('a').removeClass('is-active');
-		}
+	var $sidebar = $('.sidebar-menu a');
+	$sidebar.on('click', function() {
+		$sidebar.removeClass('is-active');
 		$(this).addClass('is-active');
-
-		return false;
 	});
+
 	$('.sidebar-toggle').on('click', function() {
 		$(this).toggleClass('toggle-is-active');
 		$('.sidebar-menu').toggleClass('sidebar-is-active');
