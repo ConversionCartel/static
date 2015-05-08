@@ -22,6 +22,15 @@
 			text-decoration: underline;
 		}
 	}
+
+	/* Resetting default styles */
+	ol, ul {
+		padding: 0px 25px 30px 45px;
+
+		> li {
+			line-height: 1.5
+		}
+	}
 }
 .about-us-container {
 	width: 90%;

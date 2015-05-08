@@ -14,4 +14,21 @@ $(function(){
 		$(this).toggleClass('toggle-is-active');
 		$('.sidebar-menu').toggleClass('sidebar-is-active');
 	});
+
+
+	var stickyNav = function(){
+		var scrollTop = $(window).scrollTop();
+
+		if (scrollTop > 100) {
+		    $('nav.menu').addClass('is-fixed');
+		} else {
+		    $('nav.menu').removeClass('is-fixed');
+		}
+	};
+
+	stickyNav();
+
+	$(window).scroll(function() {
+	    stickyNav();
+	});
 });
