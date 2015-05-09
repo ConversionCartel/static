@@ -41,6 +41,7 @@
 			border-right: 1px solid $light_gray;
 			min-height: 300px;
 			padding: 20px;
+			display: table-cell;
 		}
 
 		&:last-child {
@@ -203,7 +204,63 @@
 	}
 }
 
-.home-subcontent-3 {
-	background: url('../img/Logo_Mark_Transparent.png') top left no-repeat;
+// .home-subcontent-3 {
+// 	background: url('../img/Logo_Mark_Transparent.png') top left no-repeat;
+// }
+
+
+
+
+
+
+// BELOW IS THE TESTIOMIALS AREA
+.testimonials-sec {
+	width: 100%;
+	background-color: $accent;
 }
+.image-sec, .copy-sec {
+	display: inline-block;
+	vertical-align: middle;
+}
+.image-sec {
+	width: 60%;
+	position: relative;
+
+	.image--sec__block {
+		width: 33%;
+		display: inline-block;
+		position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+	}
+	}
+
+	img {
+		width: 100%;
+	}
+	.is-active-tst {
+		&:before {
+			content: none;
+		}
+	}
+}
+.copy-sec {
+	width: 39%;
+
+	.copy-sec__copy {
+		font-size: 1.25rem;
+		color: #fff;
+		padding: 30px 50px;
+	}
+}
+
+
 
