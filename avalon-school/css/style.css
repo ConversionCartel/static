@@ -1196,3 +1196,81 @@ html, body {
     margin-right: 50px; }
     .content-container .content__inner-sec01 ul li {
       margin-left: 30px; }
+
+.error-container {
+  width: 100%;
+  text-align: center; }
+  .error-container .error-head, .error-container .error-msg {
+    font-family: 'Montserrat', sans-serif; }
+  .error-container .error-head {
+    font-size: 7rem;
+    color: #00aeef; }
+  .error-container .error-msg {
+    font-size: 2rem;
+    margin-bottom: 25px; }
+  .error-container .error-logo {
+    margin-bottom: 35px; }
+
+.PBL {
+  background: #00aeef url('../img/PBL-bg-image.jpg') no-repeat bottom center/100%;
+  width: 100%;
+  padding-bottom: 100px; }
+  @media (min-width: 768px) {
+    .PBL {
+      padding-bottom: 270px; } }
+
+.PBL-container {
+  width: 90%;
+  position: relative;
+  max-width: 1170px;
+  margin: -100px auto 0;
+  padding: 38px 35px 50px;
+  position: relative;
+  z-index: 100;
+  background: #fff; }
+  @media (min-width: 768px) {
+    .PBL-container {
+      width: 100%; } }
+  .PBL-container .content-headline {
+    color: #00aeef; }
+  .PBL-container .content-subhead {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #00aeef; }
+  .PBL-container .pbl-img-01 {
+    max-width: 100%;
+    width: 413px; }
+  .PBL-container .pbl-img-02 {
+    width: 282px; }
+  .PBL-container ol {
+    margin-left: 30px; }
+
+.current-student {
+  background: #8dc63f url('../img/current-bg.jpg') no-repeat bottom center/100%;
+  width: 100%;
+  padding-bottom: 100px; }
+  @media (min-width: 768px) {
+    .current-student {
+      padding-bottom: 270px; } }
+
+.current-student-container {
+  width: 90%;
+  position: relative;
+  max-width: 1170px;
+  margin: -100px auto 0;
+  padding: 38px 35px 50px;
+  position: relative;
+  z-index: 100;
+  background: #fff; }
+  @media (min-width: 768px) {
+    .current-student-container {
+      width: 100%; } }
+  .current-student-container .quick-links {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 20px 30px 0;
+    text-decoration: none; }
+    .current-student-container .quick-links p {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: #524c45; }

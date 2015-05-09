@@ -18,10 +18,47 @@ avalonApp.config(function ($routeProvider) {
 	$routeProvider.when('/theteam', {
 		templateUrl: 'about-us/the-team.html'
 	});
+	$routeProvider.when('/boardpolicies', {
+		templateUrl: 'about-us/boardpolicies.html'
+	});
 
 	// PROSPECTING STUDENTS
 	$routeProvider.when('/prospectivestudents', {
 		templateUrl: 'for-prospective-students/prospective-students.html'
+	});
+
+	// PROJECT BASED LEARNING - HOW WERE DIFFERENT
+	$routeProvider.when('/how-were-different', {
+		templateUrl: 'project-based-learning/PBL.html'
+	});
+	$routeProvider.when('/why-pbl', {
+		templateUrl: 'project-based-learning/why-pbl.html'
+	});
+	$routeProvider.when('/gradelevel', {
+		templateUrl: 'project-based-learning/grade-level.html'
+	});
+	$routeProvider.when('/community', {
+		templateUrl: 'project-based-learning/community-involvement.html'
+	});
+
+	// CURRENT STUDENTS
+	$routeProvider.when('/current-students', {
+		templateUrl: 'current-student/current-student.html'
+	});
+	$routeProvider.when('/lunch-program', {
+		templateUrl: 'current-student/lunch-program.html'
+	});
+	$routeProvider.when('/gradstandard', {
+		templateUrl: 'current-student/gradstandard.html'
+	});
+	$routeProvider.when('/seminar', {
+		templateUrl: 'current-student/seminar.html'
+	});
+	$routeProvider.when('/resources', {
+		templateUrl: 'current-student/resources.html'
+	});
+	$routeProvider.when('/get-involved', {
+		templateUrl: 'current-student/get-involved.html'
 	});
 
 	// ONCE THIS IS ALL SET AND WORKING REDIRECT THIS TO THE 404 PAGE

@@ -1,0 +1,20 @@
+.error-container {
+	width: 100%;
+	text-align: center;
+
+	.error-head, .error-msg {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.error-head {
+		font-size: 7rem;
+		color: $secondary;
+	}
+	.error-msg {
+		font-size: 2rem;
+		margin-bottom: 25px;
+	}
+	.error-logo {
+		margin-bottom: 35px;
+	}
+}
