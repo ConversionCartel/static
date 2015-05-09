@@ -1,0 +1,36 @@
+.current-student {
+	background: $primary url('../img/current-bg.jpg') no-repeat bottom center / 100%;
+	width: 100%;
+	padding-bottom: 100px;
+
+	@include bp(tablet) {
+		padding-bottom: 270px;
+	}
+}
+.current-student-container {
+	width: 90%;
+	position: relative;
+	max-width: 1170px;
+	margin: -100px auto 0;
+	padding: 38px 35px 50px;
+	position: relative;
+	z-index: 100;
+	background: #fff;
+
+	@include bp(tablet) {
+		width: 100%;
+	}
+
+	.quick-links {
+		display: inline-block;
+		vertical-align: bottom;
+		margin: 0 20px 30px 0;
+		text-decoration: none;
+
+		p {
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+			color: $dark;
+		}
+	}
+}
