@@ -1,6 +1,9 @@
 var avalonApp = angular.module('avalonApp', ['ngRoute']);
 
 avalonApp.config(function ($routeProvider) {
+	$routeProvider.when('/', {
+		templateUrl: 'home.html'
+	});
 	$routeProvider.when('/home', {
 		templateUrl: 'home.html'
 	});
