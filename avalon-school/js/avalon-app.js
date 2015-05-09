@@ -24,7 +24,13 @@ avalonApp.config(function ($routeProvider) {
 
 	// PROSPECTING STUDENTS
 	$routeProvider.when('/prospectivestudents', {
+		templateUrl: 'for-prospective-students/why-avalon.html'
+	});
+	$routeProvider.when('/faq', {
 		templateUrl: 'for-prospective-students/prospective-students.html'
+	});
+	$routeProvider.when('/awards-recognition', {
+		templateUrl: 'for-prospective-students/AwardsRecog.html'
 	});
 
 	// PROJECT BASED LEARNING - HOW WERE DIFFERENT
@@ -59,6 +65,11 @@ avalonApp.config(function ($routeProvider) {
 	});
 	$routeProvider.when('/get-involved', {
 		templateUrl: 'current-student/get-involved.html'
+	});
+
+	// TEACHER CENTER
+	$routeProvider.when('/teacher-center', {
+		templateUrl: 'teacher-center/teacher-center.html'
 	});
 
 	// ONCE THIS IS ALL SET AND WORKING REDIRECT THIS TO THE 404 PAGE
