@@ -859,11 +859,6 @@ html, body {
     .sidebar-toggle {
       display: none; } }
 
-.toggle-is-active {
-  top: -10px;
-  left: -10px;
-  transform: scale(.8, .8); }
-
 .sidebar-menu {
   background-color: #948b80;
   width: 240px;
@@ -1098,11 +1093,6 @@ html, body {
     .sidebar-toggle {
       display: none; } }
 
-.toggle-is-active {
-  top: -10px;
-  left: -10px;
-  transform: scale(.8, .8); }
-
 .sidebar-menu {
   background-color: #948b80;
   width: 240px;
@@ -1203,11 +1193,17 @@ html, body {
   .error-container .error-head, .error-container .error-msg {
     font-family: 'Montserrat', sans-serif; }
   .error-container .error-head {
-    font-size: 7rem;
+    font-size: 3rem;
     color: #00aeef; }
+    @media (min-width: 768px) {
+      .error-container .error-head {
+        font-size: 7rem; } }
   .error-container .error-msg {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-bottom: 25px; }
+    @media (min-width: 768px) {
+      .error-container .error-msg {
+        font-size: 2rem; } }
   .error-container .error-logo {
     margin-bottom: 35px; }
 

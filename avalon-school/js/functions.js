@@ -2,6 +2,10 @@
 $(function(){
 	$('.js--menu').click(function(){
 		$('.ui--menu').toggleClass('is-active');
+		return false;
+	});
+	$('.ui--menu li a').on('click', function() {
+		$('.ui--menu').removeClass('is-active');
 	});
 
 	/* I guess we don't need this anymore if we're going to create the actual pages?
@@ -11,11 +15,6 @@ $(function(){
 			$(this).addClass('is-active');
 		});
 	*/
-
-	$('.sidebar-toggle').on('click', function() {
-		$(this).toggleClass('toggle-is-active');
-		$('.sidebar-menu').toggleClass('sidebar-is-active');
-	});
 
 
 	var stickyNav = function(){
@@ -33,4 +32,6 @@ $(function(){
 	$(window).scroll(function() {
 	    stickyNav();
 	});
+
+
 });
