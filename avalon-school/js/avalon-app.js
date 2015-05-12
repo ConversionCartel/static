@@ -80,3 +80,14 @@ avalonApp.config(function ($routeProvider) {
 	$routeProvider.otherwise({ redirectTo: '/404' });
 
 });
+
+avalonApp.directive('sidebarmenu', function() {
+	return {
+		link: function(scope, element, attr) {
+			$('.sidebar-toggle').on('click', function() {
+				$(this).toggleClass('toggle-is-active');
+				$('.sidebar-menu').toggleClass('sidebar-is-active');
+			});
+		}
+	}
+});
